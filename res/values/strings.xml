@@ -15806,5 +15806,8 @@
     <string name="allow_access_hid_description">If you allow access, malicious apps may reprogram your HIDs to compromise your system. For example, apps could simulate your keyboard or mouse inputs to control your system when it isn\'t open. Make sure you trust apps when allowing access.</string>
     <!-- Search keywords for Human interface device access setting -->
     <string name="keywords_access_hid">hid, human, access, device</string>
-    <!-- Access HID end -->
+    <!-- Bypass privileged secure window even on lock screens. Cases: headless smartphone / no physical display and using scrcpy -->
+    <string name="advanced_bypass_secure_title">Advanced secure flag bypass</string>
+    <string name="advanced_bypass_secure_summary">Force allow screenshots, screening, including lock screen and DRM interfaces.\nInfo: Fakes isSecure() on setSecure() calls return false so system evaluates every interface should not be protected hence dodging black screens anywhere.</string>
+
 </resources>

@@ -122,6 +122,15 @@
         android:fragment="com.android.settings.security.MemtagPage"
         settings:controller="com.android.settings.security.MemtagPagePreferenceController" />
 
+    <!-- set a switch to manipulate custom property persist.sys.bypass_secure-->
+    <SwitchPreferenceCompat
+        android:order="95"
+        android:key="advanced_bypass_secure"
+        android:title="@string/advanced_bypass_secure_title"
+        android:summary="@string/advanced_bypass_secure_summary"
+        android:defaultValue="false"
+        settings:controller="com.android.settings.security.AdvancedIgnoreSecurePreferenceController"/>
+
     <!-- work profile security section -->
     <PreferenceCategory
         android:order="310"
